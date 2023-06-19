@@ -12,20 +12,21 @@ env:
 
 
 window:
-  padding:
-    x: 10
-    y: 10
   decorations: none
   startup_mode: Maximized
   dimensions:
     columns: 140
     lines: 38
-  opacity: 0.92
+  opacity: 0.93
 
 
-#background_opacity: 0.92
+#background_opacity: 0.93
 cursor:
   style: Block
+
+font:
+  size: 12.0
+
 
 selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
@@ -788,7 +789,7 @@ working_directory: None
 #
 # If the same trigger is assigned to multiple actions, all of them are executed
 # in the order they were defined in.
-#key_bindings:
+key_bindings:
   #- { key: Paste,                                       action: Paste          }
   #- { key: Copy,                                        action: Copy           }
   #- { key: L,         mods: Control,                    action: ClearLogNotice }
@@ -799,8 +800,8 @@ working_directory: None
   #- { key: End,       mods: Shift,   mode: ~Alt,        action: ScrollToBottom }
 
   # Vi Mode
-  #- { key: Space,  mods: Shift|Control, mode: ~Search,    action: ToggleViMode            }
-  #- { key: Space,  mods: Shift|Control, mode: Vi|~Search, action: ScrollToBottom          }
+  #- { key: Space,  mods: Shift|Control, mode: ~Search,    action: ToggleViMode            } 
+  - { key: Space, mods: Control|Command, mode: ~Search, action: ToggleViMode          }
   #- { key: Escape,                      mode: Vi|~Search, action: ClearSelection          }
   #- { key: I,                           mode: Vi|~Search, action: ToggleViMode            }
   #- { key: I,                           mode: Vi|~Search, action: ScrollToBottom          }
