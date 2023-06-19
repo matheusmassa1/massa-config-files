@@ -60,3 +60,21 @@ let g:vim_markdown_folding_disabled = 1
 let g:vim_markdown_frontmatter = 1
 let g:vim_markdown_conceal = 0
 let g:vim_markdown_fenced_languages = ['tsx=typescriptreact']
+
+" TODO
+" Remap :noh to and shortcut to unset last search
+" This unsets the "last search pattern" register by hitting return
+"nnoremap <CR> :noh<CR><CR>
+" Remove last search until next
+nnoremap <CR> :noh<CR><CR>
+
+" Normal mode remappings
+nnoremap <C-q> :q!<CR>
+nnoremap <F4> :bd<CR>
+nnoremap <F5> :NERDTreeToggle<CR>
+nnoremap <F6> :sp<CR>:terminal<CR>
+
+" Tabs
+nnoremap <S-Tab> gT
+nnoremap <Tab> gt
+nnoremap <silent> <S-t> :tabnew<CR>
