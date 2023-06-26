@@ -83,6 +83,7 @@ nnoremap <CR> :noh<CR><CR>
 nnoremap <C-q> :q!<CR>
 nnoremap <F4> :bd<CR>
 nnoremap <F5> :NERDTreeToggle<CR>
+nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <F6> :sp<CR>:terminal<CR>
 
 " Tabs remappings
